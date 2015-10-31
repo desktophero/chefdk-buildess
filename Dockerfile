@@ -6,7 +6,7 @@ RUN apt-get install -y wget curl git apt-transport-https software-properties-com
 RUN apt-get install -y build-essential make curl
 
 # For those CI environments
-# RUN locale-gen en_US.UTF-8
+RUN locale-gen en_US.UTF-8
 ENV LANG       en_US.UTF-8
 ENV LC_ALL     en_US.UTF-8
 
