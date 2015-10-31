@@ -13,8 +13,6 @@ ENV LC_ALL     en_US.UTF-8
 RUN wget --no-check-certificate https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chefdk_0.7.0-1_amd64.deb -O ~/chefdk.deb
 RUN dpkg -i ~/chefdk.deb && rm -rf ~/chefdk.deb
 
-COPY gemrc /etc/gemrc
-
 ENV PATH="/opt/chefdk/bin:/root/.chefdk/gem/ruby/2.1.0/bin:/opt/chefdk/embedded/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 ENV GEM_ROOT="/opt/chefdk/embedded/lib/ruby/gems/2.1.0"
 ENV GEM_HOME="/root/.chefdk/gem/ruby/2.1.0"
