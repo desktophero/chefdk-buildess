@@ -4,6 +4,7 @@ MAINTAINER Jason Walker <desktophero@gmail.com>
 RUN apt-get update
 RUN apt-get install -y wget curl git apt-transport-https software-properties-common make
 RUN apt-get install -y build-essential make curl
+RUN apt-get install -y vagrant
 
 # For those CI environments
 RUN locale-gen en_US.UTF-8
