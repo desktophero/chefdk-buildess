@@ -29,4 +29,5 @@ RUN chef gem install \
   rake:10.4.2 \
   chef-sugar:3.1.1 \
   statsd:0.5.4 \
+  chef-vault-testfixtures 0.5.2 \
   --no-ri --no-rdoc
